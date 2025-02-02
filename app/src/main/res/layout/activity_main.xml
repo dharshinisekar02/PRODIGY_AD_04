@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1A1A2E"
+    android:padding="20dp">
+
+    <!-- Status Text -->
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X's Turn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Game Box with Grid Background -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grid_background"
+        android:padding="5dp">
+
+        <!-- Grid for Buttons -->
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:padding="5dp">
+
+            <Button android:id="@+id/button_00" style="@style/GameButton" android:contentDescription="Tic-Tac-Toe Button 00"/>
+            <Button android:id="@+id/button_01" style="@style/GameButton" android:contentDescription="Tic-Tac-Toe Button 01"/>
+            <Button android:id="@+id/button_02" style="@style/GameButton" android:contentDescription="Tic-Tac-Toe Button 02"/>
+            <Button android:id="@+id/button_10" style="@style/GameButton" android:contentDescription="Tic-Tac-Toe Button 10"/>
+            <Button android:id="@+id/button_11" style="@style/GameButton" android:contentDescription="Tic-Tac-Toe Button 11"/>
+            <Button android:id="@+id/button_12" style="@style/GameButton" android:contentDescription="Tic-Tac-Toe Button 12"/>
+            <Button android:id="@+id/button_20" style="@style/GameButton" android:contentDescription="Tic-Tac-Toe Button 20"/>
+            <Button android:id="@+id/button_21" style="@style/GameButton" android:contentDescription="Tic-Tac-Toe Button 21"/>
+            <Button android:id="@+id/button_22" style="@style/GameButton" android:contentDescription="Tic-Tac-Toe Button 22"/>
+        </GridLayout>
+
+    </LinearLayout>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"
+        android:contentDescription="Reset Tic-Tac-Toe Game"/>
+
+</LinearLayout>
